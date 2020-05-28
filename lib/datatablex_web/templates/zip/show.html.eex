@@ -1,0 +1,23 @@
+<h1>Show Zip</h1>
+
+<ul>
+
+  <li>
+    <strong>Zip code:</strong>
+    <%= @zip.zip_code %>
+  </li>
+
+  <li>
+    <strong>City:</strong>
+    <%= @zip.city %>
+  </li>
+
+  <li>
+    <strong>State:</strong>
+    <%= @zip.state %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.zip_path(@conn, :edit, @zip) %></span>
+<span><%= link "Back", to: Routes.zip_path(@conn, :index) %></span>
